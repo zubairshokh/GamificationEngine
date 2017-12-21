@@ -32,5 +32,5 @@ config :gamification_engine, GamificationEngine.Repo,
 adapter: Ecto.Adapters.Postgres,
 database: "gamification_engine",
 username: "postgres",
-password: "password",
+password: "postgres",
 port: "5433"

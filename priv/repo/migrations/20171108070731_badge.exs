@@ -8,7 +8,9 @@ defmodule GamificationEngine.Repo.Migrations.Badge do
     create table(:badges) do
       add :name, :string
       add :description, :string
-      add :points, :integer
+      add :awardpoints, :integer
+      add :condition, :integer
+      add :badge_category_id, references(:badge_categories), null: false
       timestamps()
     end
   end

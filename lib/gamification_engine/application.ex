@@ -10,7 +10,7 @@ defmodule GamificationEngine.Application do
     children = [
       # Start the Ecto repository
       supervisor(GamificationEngine.Repo, []),
-            
+      supervisor(GamificationEngine.GameEvaluation.GameGenserver, []),      
       # Start your own worker by calling: GamificationEngine.Worker.start_link(arg1, arg2, arg3)
        #worker(GamificationEngine.Repo, []),
     ]

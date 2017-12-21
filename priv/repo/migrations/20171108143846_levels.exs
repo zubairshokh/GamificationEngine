@@ -8,7 +8,8 @@ defmodule GamificationEngine.Repo.Migrations.Levels do
     create table(:levels) do
       add :name, :string
       add :description, :string
-      add :points_range, :string
+      add :points_range_start, :integer
+      add :points_range_end, :integer
       timestamps() 
     end
   end
