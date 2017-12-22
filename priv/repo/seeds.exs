@@ -52,7 +52,7 @@ GamificationEngine.Repo.insert!(%GamificationEngine.Model.BadgeCategory{
         name: "Naive",
         description: "New User Badge/ complimentary 10 points given",
         awardpoints: 0,
-        condition: 0
+        condition: "activity:0,count:0"
     }]
 })
 
@@ -63,13 +63,13 @@ GamificationEngine.Repo.insert!(%GamificationEngine.Model.BadgeCategory{
         name: "Popular Photography Badge",
         description:  "Photograper will be awarded 50 points with condition that he has followed 50 other users",
         awardpoints: 50,
-        condition: 50
+        condition: "activity:5,count:50"
     },
     %GamificationEngine.Model.Badge{
         name: "Famous Photography Badge",
         description:  "Photograper will be awarded 50 points with condition that he has followed 100 other users",
         awardpoints: 50,
-        condition: 100
+        condition: "activity:5,count:100"
     }]
 })
 
@@ -80,13 +80,13 @@ GamificationEngine.Repo.insert!(%GamificationEngine.Model.BadgeCategory{
         name: "Popular Liker Badge",
         description:  "Photograper will be awarded 40 points with condition that he has Liked 500 other pictures",
         awardpoints: 40,
-        condition: 500
+        condition: "activity:4,count:500"
     },
     %GamificationEngine.Model.Badge{
         name: "Picture Lover Badge",
         description: "Photograper will be awarded 100 points with condition that he has Liked 2000 other pictures",
         awardpoints: 100,
-        condition: 2000
+        condition: "activity:4,count:2000"
     }]
 })
     

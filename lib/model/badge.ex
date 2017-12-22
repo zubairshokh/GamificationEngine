@@ -7,7 +7,7 @@ defmodule GamificationEngine.Model.Badge do
         field :name, :string
         field :description, :string
         field :awardpoints, :integer
-        field :condition, :integer
+        field :condition, :string
         belongs_to :badge_category, Model.BadgeCategory
         has_many :user, GamificationEngine.Model.User
         timestamps()

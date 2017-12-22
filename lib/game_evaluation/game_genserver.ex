@@ -18,6 +18,7 @@ defmodule GamificationEngine.GameEvaluation.GameGenserver do
         GameEvaluation.ProcessEvaluation.enter_log(log)
       {:noreply, "cast"}
     end 
+    
     def handle_call(:call, _from, state) do
         {:reply, "call", ""}
     end
